@@ -1,11 +1,13 @@
 ros-docker
 ==========
 
-A [docker](https://www.docker.com/) project for building, testing, installing, and running ROS software in a container with an exposed [rosbridge](http://wiki.ros.org/rosbridge_suite) node.
+A [Docker](https://www.docker.com/) project for building, testing, installing, and running ROS software in a container with an exposed [rosbridge](http://wiki.ros.org/rosbridge_suite) node.
 
 ##### Why would you want to put ROS in a container?
 
 ROS for OS X is unsupported, so this exists as a prepared solution for running tests, playing with rosbridge, developing [roslibjs](http://wiki.ros.org/roslibjs) applications, or creating a container-ized build farm.
+
+If you need a mature, industrial build farm, refer to the [ROS build farm](http://wiki.ros.org/buildfarm) project which is also based on Docker.
 
 ### Building the image
 
