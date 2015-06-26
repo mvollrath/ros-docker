@@ -7,7 +7,7 @@ A [Docker](https://www.docker.com/) project for building, testing, installing, a
 
 ROS for OS X is unsupported, so this exists as a prepared solution for running tests, playing with rosbridge, developing [roslibjs](http://wiki.ros.org/roslibjs) applications, or creating a container-ized build farm.
 
-If you need a mature, industrial build farm, refer to the [ROS build farm](http://wiki.ros.org/buildfarm) project which is also based on Docker.
+If you need an industrial strength build farm, refer to the [ROS build farm](http://wiki.ros.org/buildfarm) project which is also based on Docker.
 
 ### Building the image
 
