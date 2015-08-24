@@ -1,4 +1,5 @@
 <launch>
   <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" />
   <include file="/root/user.launch" />
+  <node name="spacenav" pkg="spacenav_node" type="spacenav_node" />
 </launch>
