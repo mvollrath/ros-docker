@@ -27,11 +27,11 @@ Be sure to specify local port forwarding when starting the container.
 
 Running in the foreground (with screen output from roslaunch):
 
-    $ docker run -p 9090:9090 -i -t rosdev
+    $ docker run -p 9090:9090 -i -t --privileged -v /dev/bus/usb:/dev/bus/usb rosdev
 
 Running in the background:
 
-    $ docker run -p 9090:9090 -d rosdev
+    $ docker run -p 9090:9090 --privileged -v /dev/bus/usb:/dev/bus/usb -d rosdev
 
 While the container is runnning, you should be able to connect to its rosbridge socket at `ws://localhost:9090`.
 
@@ -49,3 +49,6 @@ If you're using a Mac, you'll need to set up [boot2docker](http://docs.docker.co
 
 Once boot2docker is running and the `docker` command is working, run the `boot2docker_forward.sh` script to forward the rosbridge port through the VM.
 
+### Spacenav and LeapMotion
+
+Make sure that spacenav isn't running on your host machine `ps aux | grep spacenavd`, and stop it if it is `sudo service spacenavd stop` Also make sure that there are no other rosdev docker images running spacenavd in the background either, `docker ps` will show you any running containers.

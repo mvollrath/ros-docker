@@ -12,7 +12,7 @@ RUN apt-get -y install g++
 RUN echo "deb http://packages.ros.org/ros/ubuntu trusty main" > /etc/apt/sources.list.d/ros-latest.list
 ADD https://raw.githubusercontent.com/ros/rosdistro/master/ros.key /root/ros.key
 RUN cat /root/ros.key | apt-key add -
-RUN apt-get update && apt-get -y install ros-indigo-ros-base ros-indigo-rosbridge-suite python-catkin-lint
+RUN apt-get update && apt-get -y install ros-indigo-ros-base ros-indigo-rosbridge-suite python-catkin-lint spacenavd ros-indigo-spacenav-node Xvfb
 RUN rosdep init && rosdep update
 
 # Trim the image by clearing cached packages.
