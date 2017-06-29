@@ -1,3 +1,12 @@
+DEPRECATED
+==========
+
+This repository is old, but might still have some hints if you're trying to use USB in Docker containers.
+
+If you want to run ROS in Docker, see [the ROS Docker wiki](http://wiki.ros.org/docker).
+
+For accelerated graphics, see [Hardware Acceleration in Docker](http://wiki.ros.org/docker/Tutorials/Hardware%20Acceleration)
+
 ros-docker
 ==========
 
